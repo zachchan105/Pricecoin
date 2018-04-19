@@ -34,6 +34,12 @@ About Us
 Lead Developer: Zach Price
 About me: https://docs.google.com/document/d/1zboqKraqDfI4GqIEllLYDlW83g78A93ZTUB7q4W2Euc/edit?usp=sharing
 
+Pricecoin Contributers 
+-------------------
+
+Jason Metko
+Chris Gunn
+
 
 
 

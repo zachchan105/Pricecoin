@@ -15,8 +15,23 @@ Pricecoin is an altcoin based off of the source code of Litecoin.
 
 For a usable copy of the wallet on Window systems, please download the zip file attached to release v0.8
 
+Installing Pricecoin Wallet
+-------------------
 
-Development process
+Windows
+ - Navigate to Releases
+ - Download the most recent Pricecoin EXE
+ - Follow instruction
+
+Mac
+ - Navigate to Releases
+ - Download the most recent Pricecoin EXE
+ - Download Winebottler - http://winebottler.kronenberg.org/
+ - User Wine + Pricecoin EXE to run on OSX
+ 
+ *Development is in progress for both dedicated mobile and OSX Wallets*
+
+Development Process
 -------------------
 
 Pretty much code and chill. I love to program, and plan to actively develop Pricecoin. This originally 

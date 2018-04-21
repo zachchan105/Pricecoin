@@ -30,7 +30,17 @@ Mac
  - User Wine + Pricecoin EXE to run on OSX
  
  *Development is in progress for both dedicated mobile and OSX Wallets*
+ 
+Block Explorers
+-------------------
 
+Block Explorers allow the user to view data about Pricecoin's blockchain without having to download
+the wallet program.
+
+ http://ExplorePricecoin.dynu.net:3001
+ http://explorepricecoin.ddns.net:3001
+ 
+ 
 Development Process
 -------------------
 

@@ -38,6 +38,7 @@ Block Explorers allow the user to view data about Pricecoin's blockchain without
 the wallet program.
 
  http://ExplorePricecoin.dynu.net:3001
+ 
  http://explorepricecoin.ddns.net:3001
  
  

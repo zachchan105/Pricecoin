@@ -41,6 +41,8 @@ the wallet program.
  
  http://explorepricecoin.ddns.net:3001
  
+ https://pricecoin.jgalodesrvbox.ovh/
+ 
  
 Development Process
 -------------------

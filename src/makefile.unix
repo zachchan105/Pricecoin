@@ -32,13 +32,12 @@ else
 endif
 
 # for boost 1.37, add -mt to the boost libraries
-# ^-- boost 1.37+ is now the de-facto standard... since a couple of years. only thread-mt is complaining tho.
 LIBS += \
  -Wl,-B$(LMODE) \
    -l boost_system$(BOOST_LIB_SUFFIX) \
    -l boost_filesystem$(BOOST_LIB_SUFFIX) \
    -l boost_program_options$(BOOST_LIB_SUFFIX) \
-   -l boost_thread-mt$(BOOST_LIB_SUFFIX) \
+   -l boost_thread$(BOOST_LIB_SUFFIX) \
    -l db_cxx$(BDB_LIB_SUFFIX) \
    -l ssl \
    -l crypto

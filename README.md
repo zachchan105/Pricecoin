@@ -33,6 +33,24 @@ Mac
  
  *Development is in progress for both dedicated mobile and OSX Wallets*
  
+ 
+Mining Pricecoin
+-------------------
+
+Pricecoin is built on the Scrypt algorithm. This means it can be mined with both
+ASICs and GPUs. We are currently supported by https://jgpool.jgalodesrvbox.ovh/
+
+-a scrypt -o stratum+tcp://jgpool.jgalodesrvbox.ovh:3433 -u YOUR_WALLET_ADDRESS -p c=PCN
+
+
+
+
+We have a pre-configured CCMiner you can find here: 
+
+https://www.dropbox.com/sh/8kpvorv1n41w6d7/AAApAhfpbKL1WHqVnk4Enqbfa?dl=0
+
+*Make sure to input your PCN address in the PricecoinMiner.cmd file*
+
 Block Explorers
 -------------------
 

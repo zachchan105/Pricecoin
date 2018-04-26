@@ -47,7 +47,7 @@ ASICs and GPUs. We are currently supported by https://jgpool.jgalodesrvbox.ovh/
 
 We have a pre-configured CCMiner you can find here: 
 
-https://www.dropbox.com/sh/8kpvorv1n41w6d7/AAApAhfpbKL1WHqVnk4Enqbfa?dl=0
+https://github.com/zachchan105/Pricecoin/files/1952852/ccminer-x64-Pricecoin.zip
 
 *Make sure to input your PCN address in the PricecoinMiner.cmd file*
 
@@ -86,9 +86,3 @@ Pricecoin Contributers
 -------------------
 
 Jason Metko / Chris Gunn
-
-
-
-
-
-

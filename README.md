@@ -85,4 +85,4 @@ About me: https://docs.google.com/document/d/1zboqKraqDfI4GqIEllLYDlW83g78A93ZTU
 Pricecoin Contributers 
 -------------------
 
-Jason Metko / Chris Gunn
+Jason Metko / Chris Gunn / Jézékael Galodé

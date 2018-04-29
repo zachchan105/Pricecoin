@@ -38,13 +38,29 @@ Mining Pricecoin
 -------------------
 
 Pricecoin is built on the Scrypt algorithm. This means it can be mined with both
-ASICs and GPUs. We are currently supported by https://jgpool.jgalodesrvbox.ovh/ and http://busypool.com/
+ASICs and GPUs. We are currently supported by a variety of pools. 
+
+
+
+
+https://jgpool.jgalodesrvbox.ovh/ 
+
 
 -a scrypt -o stratum+tcp://jgpool.jgalodesrvbox.ovh:3433 -u YOUR_WALLET_ADDRESS -p c=PCN
 
 
+
+http://busypool.com/
+
+
 -a scrypt -o stratum+tcp://busypool.com:3433 -u WALLET -p c=PCN
 
+
+
+https://pool.cirserv.com/
+
+
+-a scrypt -o stratum+tcp://pool.cirserv.com:3433 -u <WALLET_ADDRESS> -p c=PCN
 
 
 

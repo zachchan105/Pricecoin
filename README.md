@@ -11,11 +11,15 @@ What is Pricecoin?
 ----------------
 
 Pricecoin is an altcoin based off of the source code of Litecoin.
- - 1 minute block targets
- - 1 million total coins
- - Mining Reward: 10
 
-For a usable copy of the wallet on Window systems, please download the zip file attached to release v0.8
+- Algo: Scrypt (POW 100%), no premine
+- Symbol: PCN
+- Block Time: 1 minute block targets
+- Max Coin Supply: 1 million total coins
+- Mining Reward: 10 (4/17/2018)
+- Mature Block Confirmation: 5
+- Reward Halving: 18,000 Blocks
+- RPC Port: 2332
 
 Installing Pricecoin Wallet
 -------------------

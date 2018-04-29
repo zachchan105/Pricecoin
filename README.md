@@ -28,8 +28,8 @@ Windows
 Mac
  - Navigate to Releases
  - Download the most recent Pricecoin EXE
- - Download Winebottler - http://winebottler.kronenberg.org/
- - User Wine + Pricecoin EXE to run on OSX
+ - Download Wine and Winebottler - http://winebottler.kronenberg.org/
+ - Use Wine + Pricecoin Portable Binary to run on OSX
  
  *Development is in progress for both dedicated mobile and OSX Wallets*
  

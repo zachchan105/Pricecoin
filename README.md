@@ -102,8 +102,8 @@ Join the Pricecoin Discord server here: https://discord.gg/FZhvJAW
 About Us
 -------------------
 
-Lead Developer: Zach Price
-About me: https://docs.google.com/document/d/1zboqKraqDfI4GqIEllLYDlW83g78A93ZTUB7q4W2Euc/edit?usp=sharing
+Zach Price:
+https://docs.google.com/document/d/1zboqKraqDfI4GqIEllLYDlW83g78A93ZTUB7q4W2Euc/edit?usp=sharing
 
 Pricecoin Contributers 
 -------------------

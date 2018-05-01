@@ -56,6 +56,13 @@ https://jgpool.jgalodesrvbox.ovh/
 
 
 
+https://multipool.coinpool.ml/
+
+
+-a scrypt -o stratum+tcp://stratum.coinpool.ml:3355 -u WALLET.WORKER_NAME -p 1
+
+
+
 http://busypool.com/
 
 
@@ -67,6 +74,7 @@ https://pool.cirserv.com/
 
 
 -a scrypt -o stratum+tcp://pool.cirserv.com:3433 -u <WALLET_ADDRESS> -p c=PCN
+
 
 
 

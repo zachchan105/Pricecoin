@@ -109,6 +109,8 @@ Twitter: https://twitter.com/PricecoinCrypto
 
 Website: https://www.pricecoincrypto.com/
 
+Instagram: https://www.instagram.com/pricecoincrypto/
+
 About Me
 -------------------
 

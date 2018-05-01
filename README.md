@@ -21,6 +21,8 @@ Pricecoin is an altcoin based off of the source code of Litecoin.
 - Reward Halving: 18,000 Blocks
 - RPC Port: 2332
 
+BitcoinTalk ANN:  https://bitcointalk.org/index.php?topic=3433872.new#new
+
 Installing Pricecoin Wallet
 -------------------
 
@@ -98,9 +100,16 @@ and dedication is what makes this coin what it is today.
 The `master` branch is regularly built and tested, but is not guaranteed to be
 completely stable. 
 
-Join the Pricecoin Discord server here: https://discord.gg/FZhvJAW
+Social Media
+------------------
 
-About Us
+Discord: https://discord.gg/FZhvJAW
+
+Twitter: https://twitter.com/PricecoinCrypto
+
+Website: https://www.pricecoincrypto.com/
+
+About Me
 -------------------
 
 Zach Price:

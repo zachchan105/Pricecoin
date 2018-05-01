@@ -82,6 +82,11 @@ the wallet program.
  
  https://pricecoin.jgalodesrvbox.ovh/
  
+Exchanges
+-------------------
+ 
+ -https://biten.trade/
+ 
  
 Development Process
 -------------------

@@ -1,0 +1,34 @@
+src/*.exe
+src/pricecoin
+src/pricecoind
+src/test_pricecoin
+.*.swp
+*.*~*
+*.bak
+*.rej
+*.orig
+*.o
+*.patch
+.pricecoin
+
+# Compilation and Qt preprocessor part
+*.qm
+Makefile
+pricecoin-qt
+Pricecoin-Qt.app
+
+# Unit-tests
+Makefile.test
+pricecoin-qt_test
+
+# Resources cpp
+qrc_*.cpp
+
+# Qt creator
+*.pro.user
+
+# Mac specific
+.DS_Store
+build
+
+!src/leveldb*/Makefile

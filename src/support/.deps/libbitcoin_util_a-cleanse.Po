@@ -1,14 +1,10 @@
 support/libbitcoin_util_a-cleanse.o: support/cleanse.cpp \
- /usr/include/stdc-predef.h support/cleanse.h /usr/include/c++/6/stdlib.h \
- /usr/include/c++/6/cstdlib \
- /usr/include/x86_64-linux-gnu/c++/6/bits/c++config.h \
- /usr/include/x86_64-linux-gnu/c++/6/bits/os_defines.h \
+ /usr/include/stdc-predef.h support/cleanse.h /usr/include/stdlib.h \
  /usr/include/features.h /usr/include/x86_64-linux-gnu/sys/cdefs.h \
  /usr/include/x86_64-linux-gnu/bits/wordsize.h \
  /usr/include/x86_64-linux-gnu/gnu/stubs.h \
  /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
- /usr/include/x86_64-linux-gnu/c++/6/bits/cpu_defines.h \
- /usr/include/stdlib.h /usr/lib/gcc/x86_64-linux-gnu/6/include/stddef.h \
+ /usr/lib/gcc/x86_64-linux-gnu/4.9/include/stddef.h \
  /usr/include/x86_64-linux-gnu/bits/waitflags.h \
  /usr/include/x86_64-linux-gnu/bits/waitstatus.h /usr/include/endian.h \
  /usr/include/x86_64-linux-gnu/bits/endian.h \
@@ -21,25 +17,21 @@ support/libbitcoin_util_a-cleanse.o: support/cleanse.cpp \
  /usr/include/x86_64-linux-gnu/bits/select.h \
  /usr/include/x86_64-linux-gnu/bits/sigset.h \
  /usr/include/x86_64-linux-gnu/bits/time.h \
- /usr/include/x86_64-linux-gnu/bits/select2.h \
  /usr/include/x86_64-linux-gnu/sys/sysmacros.h \
  /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h /usr/include/alloca.h \
  /usr/include/x86_64-linux-gnu/bits/stdlib-bsearch.h \
  /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
- /usr/include/x86_64-linux-gnu/bits/stdlib.h /usr/include/c++/6/cstring \
- /usr/include/string.h /usr/include/x86_64-linux-gnu/bits/string3.h
+ /usr/include/c++/4.9/cstring \
+ /usr/include/x86_64-linux-gnu/c++/4.9/bits/c++config.h \
+ /usr/include/x86_64-linux-gnu/c++/4.9/bits/os_defines.h \
+ /usr/include/x86_64-linux-gnu/c++/4.9/bits/cpu_defines.h \
+ /usr/include/string.h
 
 /usr/include/stdc-predef.h:
 
 support/cleanse.h:
 
-/usr/include/c++/6/stdlib.h:
-
-/usr/include/c++/6/cstdlib:
-
-/usr/include/x86_64-linux-gnu/c++/6/bits/c++config.h:
-
-/usr/include/x86_64-linux-gnu/c++/6/bits/os_defines.h:
+/usr/include/stdlib.h:
 
 /usr/include/features.h:
 
@@ -51,11 +43,7 @@ support/cleanse.h:
 
 /usr/include/x86_64-linux-gnu/gnu/stubs-64.h:
 
-/usr/include/x86_64-linux-gnu/c++/6/bits/cpu_defines.h:
-
-/usr/include/stdlib.h:
-
-/usr/lib/gcc/x86_64-linux-gnu/6/include/stddef.h:
+/usr/lib/gcc/x86_64-linux-gnu/4.9/include/stddef.h:
 
 /usr/include/x86_64-linux-gnu/bits/waitflags.h:
 
@@ -87,8 +75,6 @@ support/cleanse.h:
 
 /usr/include/x86_64-linux-gnu/bits/time.h:
 
-/usr/include/x86_64-linux-gnu/bits/select2.h:
-
 /usr/include/x86_64-linux-gnu/sys/sysmacros.h:
 
 /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h:
@@ -99,10 +85,12 @@ support/cleanse.h:
 
 /usr/include/x86_64-linux-gnu/bits/stdlib-float.h:
 
-/usr/include/x86_64-linux-gnu/bits/stdlib.h:
+/usr/include/c++/4.9/cstring:
 
-/usr/include/c++/6/cstring:
+/usr/include/x86_64-linux-gnu/c++/4.9/bits/c++config.h:
+
+/usr/include/x86_64-linux-gnu/c++/4.9/bits/os_defines.h:
+
+/usr/include/x86_64-linux-gnu/c++/4.9/bits/cpu_defines.h:
 
 /usr/include/string.h:
-
-/usr/include/x86_64-linux-gnu/bits/string3.h:

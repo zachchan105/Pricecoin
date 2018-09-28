@@ -9,8 +9,14 @@
 #include <primitives/transaction.h>
 #include <serialize.h>
 #include <uint256.h>
+#include <crypto/allium.h>
 
+extern uint8_t algoSelect;
 
+    //extern "C" 
+    //{
+    //uint8_t algoSelect;
+    //}
 
 /** Nodes collect new transactions into a block, hash them into a hash tree,
  * and scan through nonce values to make the block's hash satisfy proof-of-work
@@ -29,6 +35,7 @@ public:
     uint32_t nTime;
     uint32_t nBits;
     uint32_t nNonce;
+    
 
     CBlockHeader()
     {
@@ -65,6 +72,8 @@ public:
     uint256 GetHash() const;
 
     uint256 GetPoWHash() const;
+
+    //uint256 GetPowHash(uint8_t selection);
 
     uint256 GetLegacyPoWHash() const;
 

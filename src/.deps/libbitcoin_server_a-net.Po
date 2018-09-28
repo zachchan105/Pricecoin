@@ -1023,8 +1023,8 @@ libbitcoin_server_a-net.o: net.cpp /usr/include/stdc-predef.h \
  policy/feerate.h streams.h support/allocators/zeroafterfree.h \
  support/cleanse.h threadinterrupt.h chainparams.h chainparamsbase.h \
  consensus/params.h primitives/block.h primitives/transaction.h \
- script/script.h clientversion.h consensus/consensus.h netbase.h \
- scheduler.h /usr/include/boost/chrono/chrono.hpp \
+ script/script.h crypto/allium.h clientversion.h consensus/consensus.h \
+ netbase.h scheduler.h /usr/include/boost/chrono/chrono.hpp \
  /usr/include/boost/thread.hpp /usr/include/boost/thread/thread.hpp \
  /usr/include/boost/thread/thread_only.hpp \
  /usr/include/boost/thread/detail/thread.hpp \
@@ -3483,6 +3483,8 @@ primitives/block.h:
 primitives/transaction.h:
 
 script/script.h:
+
+crypto/allium.h:
 
 clientversion.h:
 

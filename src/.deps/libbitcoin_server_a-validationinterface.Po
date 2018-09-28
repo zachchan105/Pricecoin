@@ -211,8 +211,8 @@ libbitcoin_server_a-validationinterface.o: validationinterface.cpp \
  /usr/include/linux/limits.h \
  /usr/include/x86_64-linux-gnu/bits/posix2_lim.h \
  /usr/include/x86_64-linux-gnu/bits/xopen_lim.h uint256.h \
- /usr/include/c++/5/cstring init.h primitives/block.h scheduler.h \
- /usr/include/boost/chrono/chrono.hpp \
+ /usr/include/c++/5/cstring init.h primitives/block.h crypto/allium.h \
+ scheduler.h /usr/include/boost/chrono/chrono.hpp \
  /usr/include/boost/chrono/duration.hpp \
  /usr/include/boost/chrono/config.hpp /usr/include/boost/config.hpp \
  /usr/include/boost/config/user.hpp \
@@ -1830,6 +1830,8 @@ uint256.h:
 init.h:
 
 primitives/block.h:
+
+crypto/allium.h:
 
 scheduler.h:
 

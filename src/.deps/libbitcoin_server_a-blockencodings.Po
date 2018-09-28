@@ -211,9 +211,9 @@ libbitcoin_server_a-blockencodings.o: blockencodings.cpp \
  /usr/include/linux/limits.h \
  /usr/include/x86_64-linux-gnu/bits/posix2_lim.h \
  /usr/include/x86_64-linux-gnu/bits/xopen_lim.h uint256.h \
- /usr/include/c++/5/cstring consensus/consensus.h consensus/validation.h \
- version.h chainparams.h chainparamsbase.h consensus/params.h protocol.h \
- netaddress.h compat.h /usr/include/fcntl.h \
+ /usr/include/c++/5/cstring crypto/allium.h consensus/consensus.h \
+ consensus/validation.h version.h chainparams.h chainparamsbase.h \
+ consensus/params.h protocol.h netaddress.h compat.h /usr/include/fcntl.h \
  /usr/include/x86_64-linux-gnu/bits/fcntl.h \
  /usr/include/x86_64-linux-gnu/bits/fcntl-linux.h \
  /usr/include/x86_64-linux-gnu/bits/uio.h \
@@ -1754,6 +1754,8 @@ serialize.h:
 uint256.h:
 
 /usr/include/c++/5/cstring:
+
+crypto/allium.h:
 
 consensus/consensus.h:
 

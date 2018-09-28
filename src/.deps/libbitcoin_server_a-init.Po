@@ -1017,8 +1017,8 @@ libbitcoin_server_a-init.o: init.cpp /usr/include/stdc-predef.h \
  /usr/include/boost/enable_shared_from_this.hpp \
  /usr/include/boost/smart_ptr/enable_shared_from_this.hpp amount.h \
  chain.h arith_uint256.h primitives/block.h primitives/transaction.h \
- script/script.h pow.h consensus/params.h chainparams.h chainparamsbase.h \
- checkpoints.h compat/sanity.h consensus/validation.h \
+ script/script.h crypto/allium.h pow.h consensus/params.h chainparams.h \
+ chainparamsbase.h checkpoints.h compat/sanity.h consensus/validation.h \
  consensus/consensus.h httpserver.h httprpc.h key.h pubkey.h hash.h \
  crypto/ripemd160.h crypto/sha256.h support/allocators/secure.h \
  support/lockedpool.h support/cleanse.h validation.h coins.h compressor.h \
@@ -3737,6 +3737,8 @@ primitives/block.h:
 primitives/transaction.h:
 
 script/script.h:
+
+crypto/allium.h:
 
 pow.h:
 

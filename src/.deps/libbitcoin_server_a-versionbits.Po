@@ -210,8 +210,8 @@ libbitcoin_server_a-versionbits.o: versionbits.cpp \
  /usr/include/x86_64-linux-gnu/bits/local_lim.h \
  /usr/include/linux/limits.h \
  /usr/include/x86_64-linux-gnu/bits/posix2_lim.h \
- /usr/include/x86_64-linux-gnu/bits/xopen_lim.h uint256.h pow.h \
- consensus/params.h tinyformat.h /usr/include/c++/5/cassert \
+ /usr/include/x86_64-linux-gnu/bits/xopen_lim.h uint256.h crypto/allium.h \
+ pow.h consensus/params.h tinyformat.h /usr/include/c++/5/cassert \
  /usr/include/c++/5/iostream /usr/include/c++/5/sstream \
  /usr/include/c++/5/bits/sstream.tcc
 
@@ -768,6 +768,8 @@ serialize.h:
 /usr/include/x86_64-linux-gnu/bits/xopen_lim.h:
 
 uint256.h:
+
+crypto/allium.h:
 
 pow.h:
 

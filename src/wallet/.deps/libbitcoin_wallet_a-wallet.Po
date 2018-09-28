@@ -904,7 +904,7 @@ wallet/libbitcoin_wallet_a-wallet.o: wallet/wallet.cpp \
  /usr/include/boost/detail/utf8_codecvt_facet.hpp /usr/include/db_cxx.h \
  /usr/include/db.h /usr/include/inttypes.h wallet/rpcwallet.h base58.h \
  chainparams.h chainparamsbase.h consensus/params.h primitives/block.h \
- protocol.h netaddress.h compat.h /usr/include/fcntl.h \
+ crypto/allium.h protocol.h netaddress.h compat.h /usr/include/fcntl.h \
  /usr/include/x86_64-linux-gnu/bits/fcntl.h \
  /usr/include/x86_64-linux-gnu/bits/fcntl-linux.h \
  /usr/include/x86_64-linux-gnu/bits/uio.h \
@@ -3496,6 +3496,8 @@ chainparamsbase.h:
 consensus/params.h:
 
 primitives/block.h:
+
+crypto/allium.h:
 
 protocol.h:
 

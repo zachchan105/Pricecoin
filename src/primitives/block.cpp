@@ -12,8 +12,16 @@
 #include <crypto/scrypt.h>
 #include <crypto/allium.h>
 #include <consensus/params.h>
+#include <chainparams.h>
 #include <validation.h>
 
+uint8_t algoSelect = 0;
+//class validation request;
+
+//uint8_t algoSelect
+//{
+    //return algoSelect;
+//}
 
 uint256 CBlockHeader::GetHash() const
 {
@@ -22,7 +30,7 @@ uint256 CBlockHeader::GetHash() const
 
 uint256 CBlockHeader::GetPoWHash() const
 {
-    if (GetAlgoSelect() == 0)
+    if (algoSelect == 0)
        return GetLegacyPoWHash();
 
     uint256 thash;

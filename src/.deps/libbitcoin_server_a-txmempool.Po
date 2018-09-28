@@ -213,7 +213,7 @@ libbitcoin_server_a-txmempool.o: txmempool.cpp /usr/include/stdc-predef.h \
  /usr/include/x86_64-linux-gnu/bits/posix2_lim.h \
  /usr/include/x86_64-linux-gnu/bits/xopen_lim.h uint256.h \
  /usr/include/c++/5/cstring compressor.h core_memusage.h \
- primitives/block.h memusage.h indirectmap.h \
+ primitives/block.h crypto/allium.h memusage.h indirectmap.h \
  /usr/include/c++/5/unordered_map /usr/include/c++/5/bits/hashtable.h \
  /usr/include/c++/5/bits/hashtable_policy.h \
  /usr/include/c++/5/bits/unordered_map.h /usr/include/c++/5/unordered_set \
@@ -1771,6 +1771,8 @@ compressor.h:
 core_memusage.h:
 
 primitives/block.h:
+
+crypto/allium.h:
 
 memusage.h:
 

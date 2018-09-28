@@ -48,18 +48,13 @@ struct LockPoints;
 
 
 // PoW algorithm in use
-//uint8_t algoSelect = 0;
-extern uint8_t algoSelect;
-//uint8_t GetAlgoSelect() {return algoSelect;}
-//extern uint8_t algoSelect = 0;
-//uint8_t GetAlgoSelect();
 
+//extern uint8_t algoSelect;
 
-
-extern "C" 
-{
-    uint8_t GetAlgoSelect();
-}
+//extern "C" 
+//{
+   // uint8_t algoSelect;
+//}
 
 
 /** Default for -whitelistrelay. */

@@ -1,9 +1,14 @@
+#include <stdlib.h>
+#include <stdint.h>
+#include <string.h>
+#include <stdio.h>
 #include "sha3/sph_blake.h"
 #include "sha3/sph_groestl.h"
 #include "sha3/sph_skein.h"
 #include "sha3/sph_keccak.h"
 #include "sha3/sph_cubehash.h"
 #include "Lyra2.h"
+//#include "allium.h"
 
 void allium_hash(const char* input, char* output)
 {

@@ -210,9 +210,9 @@ libbitcoin_server_a-merkleblock.o: merkleblock.cpp \
  /usr/include/x86_64-linux-gnu/bits/local_lim.h \
  /usr/include/linux/limits.h \
  /usr/include/x86_64-linux-gnu/bits/posix2_lim.h \
- /usr/include/x86_64-linux-gnu/bits/xopen_lim.h bloom.h hash.h \
- crypto/ripemd160.h crypto/sha256.h version.h consensus/consensus.h \
- utilstrencodings.h
+ /usr/include/x86_64-linux-gnu/bits/xopen_lim.h crypto/allium.h bloom.h \
+ hash.h crypto/ripemd160.h crypto/sha256.h version.h \
+ consensus/consensus.h utilstrencodings.h
 
 /usr/include/stdc-predef.h:
 
@@ -763,6 +763,8 @@ script/script.h:
 /usr/include/x86_64-linux-gnu/bits/posix2_lim.h:
 
 /usr/include/x86_64-linux-gnu/bits/xopen_lim.h:
+
+crypto/allium.h:
 
 bloom.h:
 

@@ -1024,11 +1024,11 @@ libbitcoin_server_a-net_processing.o: net_processing.cpp \
  policy/feerate.h streams.h support/allocators/zeroafterfree.h \
  support/cleanse.h threadinterrupt.h validationinterface.h \
  primitives/transaction.h script/script.h consensus/params.h \
- arith_uint256.h blockencodings.h primitives/block.h chainparams.h \
- chainparamsbase.h consensus/validation.h consensus/consensus.h init.h \
- validation.h coins.h compressor.h core_memusage.h memusage.h \
- indirectmap.h /usr/include/c++/5/unordered_map \
- /usr/include/c++/5/bits/hashtable.h \
+ arith_uint256.h blockencodings.h primitives/block.h crypto/allium.h \
+ chainparams.h chainparamsbase.h consensus/validation.h \
+ consensus/consensus.h init.h validation.h coins.h compressor.h \
+ core_memusage.h memusage.h indirectmap.h \
+ /usr/include/c++/5/unordered_map /usr/include/c++/5/bits/hashtable.h \
  /usr/include/c++/5/bits/hashtable_policy.h \
  /usr/include/c++/5/bits/unordered_map.h /usr/include/c++/5/unordered_set \
  /usr/include/c++/5/bits/unordered_set.h script/script_error.h \
@@ -3660,6 +3660,8 @@ arith_uint256.h:
 blockencodings.h:
 
 primitives/block.h:
+
+crypto/allium.h:
 
 chainparams.h:
 

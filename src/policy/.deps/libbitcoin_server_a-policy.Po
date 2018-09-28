@@ -627,8 +627,8 @@ policy/libbitcoin_server_a-policy.o: policy/policy.cpp \
  /usr/include/boost/type_traits/add_pointer.hpp \
  /usr/include/boost/variant/visitor_ptr.hpp \
  /usr/include/boost/variant/bad_visit.hpp consensus/validation.h \
- version.h primitives/block.h validation.h coins.h compressor.h \
- core_memusage.h memusage.h indirectmap.h \
+ version.h primitives/block.h crypto/allium.h validation.h coins.h \
+ compressor.h core_memusage.h memusage.h indirectmap.h \
  /usr/include/c++/5/unordered_map /usr/include/c++/5/bits/hashtable.h \
  /usr/include/c++/5/bits/hashtable_policy.h \
  /usr/include/c++/5/bits/unordered_map.h /usr/include/c++/5/unordered_set \
@@ -2477,6 +2477,8 @@ consensus/validation.h:
 version.h:
 
 primitives/block.h:
+
+crypto/allium.h:
 
 validation.h:
 

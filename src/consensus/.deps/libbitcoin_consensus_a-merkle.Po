@@ -211,8 +211,8 @@ consensus/libbitcoin_consensus_a-merkle.o: consensus/merkle.cpp \
  /usr/include/linux/limits.h \
  /usr/include/x86_64-linux-gnu/bits/posix2_lim.h \
  /usr/include/x86_64-linux-gnu/bits/xopen_lim.h uint256.h \
- /usr/include/c++/5/cstring primitives/block.h hash.h crypto/ripemd160.h \
- crypto/sha256.h version.h utilstrencodings.h
+ /usr/include/c++/5/cstring primitives/block.h crypto/allium.h hash.h \
+ crypto/ripemd160.h crypto/sha256.h version.h utilstrencodings.h
 
 /usr/include/stdc-predef.h:
 
@@ -763,6 +763,8 @@ uint256.h:
 /usr/include/c++/5/cstring:
 
 primitives/block.h:
+
+crypto/allium.h:
 
 hash.h:
 

@@ -617,8 +617,8 @@ wallet/libbitcoin_wallet_a-walletdb.o: wallet/walletdb.cpp \
  /usr/include/c++/5/iostream /usr/include/db.h /usr/include/inttypes.h \
  key.h pubkey.h hash.h crypto/ripemd160.h crypto/sha256.h \
  support/allocators/secure.h support/lockedpool.h base58.h chainparams.h \
- chainparamsbase.h consensus/params.h primitives/block.h protocol.h \
- netaddress.h compat.h /usr/include/fcntl.h \
+ chainparamsbase.h consensus/params.h primitives/block.h crypto/allium.h \
+ protocol.h netaddress.h compat.h /usr/include/fcntl.h \
  /usr/include/x86_64-linux-gnu/bits/fcntl.h \
  /usr/include/x86_64-linux-gnu/bits/fcntl-linux.h \
  /usr/include/x86_64-linux-gnu/bits/uio.h \
@@ -2614,6 +2614,8 @@ chainparamsbase.h:
 consensus/params.h:
 
 primitives/block.h:
+
+crypto/allium.h:
 
 protocol.h:
 

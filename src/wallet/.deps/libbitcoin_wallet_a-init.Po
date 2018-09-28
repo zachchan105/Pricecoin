@@ -1023,7 +1023,7 @@ wallet/libbitcoin_wallet_a-init.o: wallet/init.cpp \
  policy/feerate.h streams.h support/allocators/zeroafterfree.h \
  support/cleanse.h threadinterrupt.h utilmoneystr.h validation.h coins.h \
  primitives/transaction.h script/script.h compressor.h core_memusage.h \
- primitives/block.h memusage.h indirectmap.h \
+ primitives/block.h crypto/allium.h memusage.h indirectmap.h \
  /usr/include/c++/5/unordered_map /usr/include/c++/5/bits/hashtable.h \
  /usr/include/c++/5/bits/hashtable_policy.h \
  /usr/include/c++/5/bits/unordered_map.h /usr/include/c++/5/unordered_set \
@@ -3404,6 +3404,8 @@ compressor.h:
 core_memusage.h:
 
 primitives/block.h:
+
+crypto/allium.h:
 
 memusage.h:
 

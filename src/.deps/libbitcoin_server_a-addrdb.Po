@@ -1020,8 +1020,8 @@ libbitcoin_server_a-addrdb.o: addrdb.cpp /usr/include/stdc-predef.h \
  /usr/include/boost/enable_shared_from_this.hpp \
  /usr/include/boost/smart_ptr/enable_shared_from_this.hpp chainparams.h \
  chainparamsbase.h consensus/params.h primitives/block.h \
- primitives/transaction.h amount.h script/script.h clientversion.h hash.h \
- crypto/ripemd160.h crypto/sha256.h streams.h \
+ primitives/transaction.h amount.h script/script.h crypto/allium.h \
+ clientversion.h hash.h crypto/ripemd160.h crypto/sha256.h streams.h \
  support/allocators/zeroafterfree.h support/cleanse.h
 
 /usr/include/stdc-predef.h:
@@ -3353,6 +3353,8 @@ primitives/transaction.h:
 amount.h:
 
 script/script.h:
+
+crypto/allium.h:
 
 clientversion.h:
 

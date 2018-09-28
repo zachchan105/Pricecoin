@@ -213,14 +213,15 @@ wallet/libbitcoin_wallet_a-feebumper.o: wallet/feebumper.cpp \
  /usr/include/linux/limits.h \
  /usr/include/x86_64-linux-gnu/bits/posix2_lim.h \
  /usr/include/x86_64-linux-gnu/bits/xopen_lim.h uint256.h \
- /usr/include/c++/5/cstring primitives/block.h wallet/coincontrol.h \
- policy/feerate.h policy/fees.h random.h crypto/chacha20.h sync.h \
- threadsafety.h /usr/include/c++/5/condition_variable \
- /usr/include/c++/5/chrono /usr/include/c++/5/ratio \
- /usr/include/c++/5/ctime /usr/include/c++/5/bits/parse_numbers.h \
- /usr/include/c++/5/mutex /usr/include/c++/5/thread wallet/wallet.h \
- streams.h support/allocators/zeroafterfree.h support/cleanse.h \
- tinyformat.h /usr/include/c++/5/cassert /usr/include/c++/5/iostream \
+ /usr/include/c++/5/cstring primitives/block.h crypto/allium.h \
+ wallet/coincontrol.h policy/feerate.h policy/fees.h random.h \
+ crypto/chacha20.h sync.h threadsafety.h \
+ /usr/include/c++/5/condition_variable /usr/include/c++/5/chrono \
+ /usr/include/c++/5/ratio /usr/include/c++/5/ctime \
+ /usr/include/c++/5/bits/parse_numbers.h /usr/include/c++/5/mutex \
+ /usr/include/c++/5/thread wallet/wallet.h streams.h \
+ support/allocators/zeroafterfree.h support/cleanse.h tinyformat.h \
+ /usr/include/c++/5/cassert /usr/include/c++/5/iostream \
  /usr/include/c++/5/sstream /usr/include/c++/5/bits/sstream.tcc \
  ui_interface.h /usr/include/boost/signals2/last_value.hpp \
  /usr/include/boost/optional.hpp /usr/include/boost/optional/optional.hpp \
@@ -1771,6 +1772,8 @@ uint256.h:
 /usr/include/c++/5/cstring:
 
 primitives/block.h:
+
+crypto/allium.h:
 
 wallet/coincontrol.h:
 

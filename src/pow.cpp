@@ -85,7 +85,7 @@ unsigned int static KimotoGravityWell(const CBlockIndex* pindexLast, const Conse
 unsigned int GetNextWorkRequired(const CBlockIndex* pindexLast, const CBlockHeader *pblock, const Consensus::Params& params)
 {
     // we use the old retarget algo as a shim
-    if (GetAlgoSelect() > 0)
+    if (algoSelect > 0)
         return KimotoGravityWell(pindexLast, params);
 
     // but if conditional isnt met, works as it should

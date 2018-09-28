@@ -1,12 +1,16 @@
 crypto/libbitcoinconsensus_la-sha512.lo: crypto/sha512.cpp \
  /usr/include/stdc-predef.h crypto/sha512.h \
- /usr/lib/gcc/x86_64-linux-gnu/5/include/stdint.h /usr/include/stdint.h \
+ /usr/lib/gcc/x86_64-linux-gnu/6/include/stdint.h /usr/include/stdint.h \
  /usr/include/features.h /usr/include/x86_64-linux-gnu/sys/cdefs.h \
  /usr/include/x86_64-linux-gnu/bits/wordsize.h \
  /usr/include/x86_64-linux-gnu/gnu/stubs.h \
  /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
- /usr/include/x86_64-linux-gnu/bits/wchar.h /usr/include/stdlib.h \
- /usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h \
+ /usr/include/x86_64-linux-gnu/bits/wchar.h /usr/include/c++/6/stdlib.h \
+ /usr/include/c++/6/cstdlib \
+ /usr/include/x86_64-linux-gnu/c++/6/bits/c++config.h \
+ /usr/include/x86_64-linux-gnu/c++/6/bits/os_defines.h \
+ /usr/include/x86_64-linux-gnu/c++/6/bits/cpu_defines.h \
+ /usr/include/stdlib.h /usr/lib/gcc/x86_64-linux-gnu/6/include/stddef.h \
  /usr/include/x86_64-linux-gnu/bits/waitflags.h \
  /usr/include/x86_64-linux-gnu/bits/waitstatus.h /usr/include/endian.h \
  /usr/include/x86_64-linux-gnu/bits/endian.h \
@@ -33,7 +37,7 @@ crypto/libbitcoinconsensus_la-sha512.lo: crypto/sha512.cpp \
 
 crypto/sha512.h:
 
-/usr/lib/gcc/x86_64-linux-gnu/5/include/stdint.h:
+/usr/lib/gcc/x86_64-linux-gnu/6/include/stdint.h:
 
 /usr/include/stdint.h:
 
@@ -49,9 +53,19 @@ crypto/sha512.h:
 
 /usr/include/x86_64-linux-gnu/bits/wchar.h:
 
+/usr/include/c++/6/stdlib.h:
+
+/usr/include/c++/6/cstdlib:
+
+/usr/include/x86_64-linux-gnu/c++/6/bits/c++config.h:
+
+/usr/include/x86_64-linux-gnu/c++/6/bits/os_defines.h:
+
+/usr/include/x86_64-linux-gnu/c++/6/bits/cpu_defines.h:
+
 /usr/include/stdlib.h:
 
-/usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h:
+/usr/lib/gcc/x86_64-linux-gnu/6/include/stddef.h:
 
 /usr/include/x86_64-linux-gnu/bits/waitflags.h:
 

@@ -10,11 +10,11 @@ SetCompressor /SOLID lzma
 !define URL https://pricecoin.org/
 
 # MUI Symbol Definitions
-!define MUI_ICON "/home/poot/Desktop/pricecoin-0.16-legacyIMAGES/share/pixmaps/bitcoin.ico"
-!define MUI_WELCOMEFINISHPAGE_BITMAP "/home/poot/Desktop/pricecoin-0.16-legacyIMAGES/share/pixmaps/nsis-wizard.bmp"
+!define MUI_ICON "/home/poot/PricecoinTest/share/pixmaps/bitcoin.ico"
+!define MUI_WELCOMEFINISHPAGE_BITMAP "/home/poot/PricecoinTest/share/pixmaps/nsis-wizard.bmp"
 !define MUI_HEADERIMAGE
 !define MUI_HEADERIMAGE_RIGHT
-!define MUI_HEADERIMAGE_BITMAP "/home/poot/Desktop/pricecoin-0.16-legacyIMAGES/share/pixmaps/nsis-header.bmp"
+!define MUI_HEADERIMAGE_BITMAP "/home/poot/PricecoinTest/share/pixmaps/nsis-header.bmp"
 !define MUI_FINISHPAGE_NOAUTOCLOSE
 !define MUI_STARTMENUPAGE_REGISTRY_ROOT HKLM
 !define MUI_STARTMENUPAGE_REGISTRY_KEY ${REGKEY}
@@ -23,7 +23,7 @@ SetCompressor /SOLID lzma
 !define MUI_FINISHPAGE_RUN "$WINDIR\explorer.exe"
 !define MUI_FINISHPAGE_RUN_PARAMETERS $INSTDIR\pricecoin-qt
 !define MUI_UNICON "${NSISDIR}\Contrib\Graphics\Icons\modern-uninstall.ico"
-!define MUI_UNWELCOMEFINISHPAGE_BITMAP "/home/poot/Desktop/pricecoin-0.16-legacyIMAGES/share/pixmaps/nsis-wizard.bmp"
+!define MUI_UNWELCOMEFINISHPAGE_BITMAP "/home/poot/PricecoinTest/share/pixmaps/nsis-wizard.bmp"
 !define MUI_UNFINISHPAGE_NOAUTOCLOSE
 
 # Included files
@@ -49,7 +49,7 @@ Var StartMenuGroup
 !insertmacro MUI_LANGUAGE English
 
 # Installer attributes
-OutFile /home/poot/Desktop/pricecoin-0.16-legacyIMAGES/pricecoin-${VERSION}-win-setup.exe
+OutFile /home/poot/PricecoinTest/pricecoin-${VERSION}-win-setup.exe
 !if "" == "64"
 InstallDir $PROGRAMFILES64\Pricecoin
 !else
@@ -74,14 +74,14 @@ ShowUninstDetails show
 Section -Main SEC0000
     SetOutPath $INSTDIR
     SetOverwrite on
-    File /home/poot/Desktop/pricecoin-0.16-legacyIMAGES/release/pricecoin-qt
-    File /oname=COPYING.txt /home/poot/Desktop/pricecoin-0.16-legacyIMAGES/COPYING
-    File /oname=readme.txt /home/poot/Desktop/pricecoin-0.16-legacyIMAGES/doc/README_windows.txt
+    File /home/poot/PricecoinTest/release/pricecoin-qt
+    File /oname=COPYING.txt /home/poot/PricecoinTest/COPYING
+    File /oname=readme.txt /home/poot/PricecoinTest/doc/README_windows.txt
     SetOutPath $INSTDIR\daemon
-    File /home/poot/Desktop/pricecoin-0.16-legacyIMAGES/release/pricecoind
-    File /home/poot/Desktop/pricecoin-0.16-legacyIMAGES/release/pricecoin-cli
+    File /home/poot/PricecoinTest/release/pricecoind
+    File /home/poot/PricecoinTest/release/pricecoin-cli
     SetOutPath $INSTDIR\doc
-    File /r /home/poot/Desktop/pricecoin-0.16-legacyIMAGES/doc\*.*
+    File /r /home/poot/PricecoinTest/doc\*.*
     SetOutPath $INSTDIR
     WriteRegStr HKCU "${REGKEY}\Components" Main 1
 SectionEnd

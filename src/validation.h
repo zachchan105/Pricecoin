@@ -46,17 +46,6 @@ struct ChainTxData;
 struct PrecomputedTransactionData;
 struct LockPoints;
 
-
-// PoW algorithm in use
-
-//extern uint8_t algoSelect;
-
-//extern "C" 
-//{
-   // uint8_t algoSelect;
-//}
-
-
 /** Default for -whitelistrelay. */
 static const bool DEFAULT_WHITELISTRELAY = true;
 /** Default for -whitelistforcerelay. */

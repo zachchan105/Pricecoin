@@ -39,7 +39,7 @@
 #define ENABLE_WALLET 1
 
 /* Define to 1 to enable ZMQ functions */
-#define ENABLE_ZMQ 0
+#define ENABLE_ZMQ 1
 
 /* parameter and return value type for __fdelt_chk */
 /* #undef FDELT_TYPE */
@@ -266,16 +266,16 @@
 #define HAVE_MEMORY_H 1
 
 /* Define to 1 if you have the <miniupnpc/miniupnpc.h> header file. */
-/* #undef HAVE_MINIUPNPC_MINIUPNPC_H */
+#define HAVE_MINIUPNPC_MINIUPNPC_H 1
 
 /* Define to 1 if you have the <miniupnpc/miniwget.h> header file. */
-/* #undef HAVE_MINIUPNPC_MINIWGET_H */
+#define HAVE_MINIUPNPC_MINIWGET_H 1
 
 /* Define to 1 if you have the <miniupnpc/upnpcommands.h> header file. */
-/* #undef HAVE_MINIUPNPC_UPNPCOMMANDS_H */
+#define HAVE_MINIUPNPC_UPNPCOMMANDS_H 1
 
 /* Define to 1 if you have the <miniupnpc/upnperrors.h> header file. */
-/* #undef HAVE_MINIUPNPC_UPNPERRORS_H */
+#define HAVE_MINIUPNPC_UPNPERRORS_H 1
 
 /* Define this symbol if you have MSG_DONTWAIT */
 #define HAVE_MSG_DONTWAIT 1
@@ -314,7 +314,7 @@
 /* #undef HAVE_SYS_ENDIAN_H */
 
 /* Define this symbol if the Linux getrandom system call is available */
-/* #undef HAVE_SYS_GETRANDOM */
+#define HAVE_SYS_GETRANDOM 1
 
 /* Define to 1 if you have the <sys/prctl.h> header file. */
 #define HAVE_SYS_PRCTL_H 1
@@ -343,8 +343,7 @@
 /* Define this symbol if boost sleep_for works */
 #define HAVE_WORKING_BOOST_SLEEP_FOR 1
 
-/* Define to the sub-directory in which libtool stores uninstalled libraries.
-   */
+/* Define to the sub-directory where libtool stores uninstalled libraries. */
 #define LT_OBJDIR ".libs/"
 
 /* Define to the address where bug reports for this package should be sent. */
@@ -407,7 +406,7 @@
 
 /* UPnP support not compiled if undefined, otherwise value (0 or 1) determines
    default state */
-/* #undef USE_UPNP */
+#define USE_UPNP 0
 
 /* Define WORDS_BIGENDIAN to 1 if your processor stores words with the most
    significant byte first (like Motorola and SPARC, unlike Intel). */

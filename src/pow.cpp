@@ -82,13 +82,8 @@ unsigned int static KimotoGravityWell(const CBlockIndex* pindexLast, const Conse
     return bnNew.GetCompact();
 }
 
-unsigned int GetNextWorkRequired(const CBlockIndex* pindexLast, const CBlockHeader *pblock, const Consensus::Params& params)
+unsigned int GetNextWorkRequiredLegacy(const CBlockIndex* pindexLast, const CBlockHeader *pblock, const Consensus::Params& params)
 {
-    // we use the old retarget algo as a shim
-    if (algoSelect > 0)
-        return KimotoGravityWell(pindexLast, params);
-
-    // but if conditional isnt met, works as it should
     assert(pindexLast != nullptr);
     unsigned int nProofOfWorkLimit = UintToArith256(params.powLimit).GetCompact();
 
@@ -162,6 +157,18 @@ unsigned int CalculateNextWorkRequired(const CBlockIndex* pindexLast, int64_t nF
         bnNew = bnPowLimit;
 
     return bnNew.GetCompact();
+}
+
+unsigned int GetNextWorkRequired(const CBlockIndex* pindexLast, const CBlockHeader *pblock, const Consensus::Params& params)
+{
+    assert(pindexLast != nullptr);
+    unsigned int nProofOfWorkLimit = UintToArith256(params.powLimit).GetCompact();
+
+    if (pindexLast->nHeight+1 > 175000 && pindexLast->nHeight+1 < 175010)
+        return nProofOfWorkLimit;
+    if (pindexLast->nHeight+1 <= 175000)
+        return GetNextWorkRequiredLegacy(pindexLast, pblock, params);
+    return KimotoGravityWell(pindexLast, params);
 }
 
 bool CheckProofOfWork(uint256 hash, unsigned int nBits, const Consensus::Params& params)

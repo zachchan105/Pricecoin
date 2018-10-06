@@ -11,37 +11,20 @@
 #include <crypto/common.h>
 #include <crypto/scrypt.h>
 #include <crypto/allium.h>
-#include <consensus/params.h>
 #include <chainparams.h>
-#include <validation.h>
-
-uint8_t algoSelect = 0;
-//class validation request;
-
-//uint8_t algoSelect
-//{
-    //return algoSelect;
-//}
 
 uint256 CBlockHeader::GetHash() const
 {
     return SerializeHash(*this);
 }
 
-uint256 CBlockHeader::GetPoWHash() const
-{
-    if (algoSelect == 0)
-       return GetLegacyPoWHash();
-
-    uint256 thash;
-    allium_hash(BEGIN(nVersion), BEGIN(thash));
-    return thash;
-}
-
-uint256 CBlockHeader::GetLegacyPoWHash() const
+uint256 CBlockHeader::GetPoWHash(const int nHeight) const
 {
     uint256 thash;
-    scrypt_1024_1_1_256(BEGIN(nVersion), BEGIN(thash));
+    if (nHeight > 175000)
+        allium_hash(BEGIN(nVersion), BEGIN(thash));
+    else
+        scrypt_1024_1_1_256(BEGIN(nVersion), BEGIN(thash));
     return thash;
 }
 

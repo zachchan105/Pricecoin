@@ -215,9 +215,10 @@ zmq/libbitcoin_zmq_a-zmqnotificationinterface.o: \
  /usr/include/c++/5/cstring /usr/include/c++/5/list \
  /usr/include/c++/5/bits/stl_list.h /usr/include/c++/5/bits/list.tcc \
  zmq/zmqpublishnotifier.h zmq/zmqabstractnotifier.h zmq/zmqconfig.h \
- /usr/include/zmq.h primitives/block.h version.h validation.h coins.h \
- compressor.h core_memusage.h memusage.h indirectmap.h \
- /usr/include/c++/5/unordered_map /usr/include/c++/5/bits/hashtable.h \
+ /usr/include/zmq.h primitives/block.h crypto/allium.h version.h \
+ validation.h coins.h compressor.h core_memusage.h memusage.h \
+ indirectmap.h /usr/include/c++/5/unordered_map \
+ /usr/include/c++/5/bits/hashtable.h \
  /usr/include/c++/5/bits/hashtable_policy.h \
  /usr/include/c++/5/bits/unordered_map.h /usr/include/c++/5/unordered_set \
  /usr/include/c++/5/bits/unordered_set.h hash.h crypto/ripemd160.h \
@@ -1593,6 +1594,8 @@ zmq/zmqconfig.h:
 /usr/include/zmq.h:
 
 primitives/block.h:
+
+crypto/allium.h:
 
 version.h:
 

@@ -11,13 +11,6 @@
 #include <uint256.h>
 #include <crypto/allium.h>
 
-extern uint8_t algoSelect;
-
-    //extern "C" 
-    //{
-    //uint8_t algoSelect;
-    //}
-
 /** Nodes collect new transactions into a block, hash them into a hash tree,
  * and scan through nonce values to make the block's hash satisfy proof-of-work
  * requirements.  When they solve the proof-of-work, they broadcast the block
@@ -71,11 +64,7 @@ public:
 
     uint256 GetHash() const;
 
-    uint256 GetPoWHash() const;
-
-    //uint256 GetPowHash(uint8_t selection);
-
-    uint256 GetLegacyPoWHash() const;
+    uint256 GetPoWHash(int Height) const;
 
     int64_t GetBlockTime() const
     {

@@ -1,0 +1,30 @@
+diff --git a/src/net_processing.cpp b/src/net_processing.cpp
+index b8641b9..0c0ed6a 100755
+--- a/src/net_processing.cpp
++++ b/src/net_processing.cpp
+@@ -1569,25 +1569,6 @@ bool static ProcessMessage(CNode* pfrom, const std::string& strCommand, CDataStr
+         {
+             connman->SetServices(pfrom->addr, nServices);
+         }
+-        if (!pfrom->fInbound && !pfrom->fFeeler && !pfrom->m_manual_connection && !HasAllDesirableServiceFlags(nServices))
+-        {
+-            LogPrint(BCLog::NET, "peer=%d does not offer the expected services (%08x offered, %08x expected); disconnecting\n", pfrom->GetId(), nServices, GetDesirableServiceFlags(nServices));
+-            connman->PushMessage(pfrom, CNetMsgMaker(INIT_PROTO_VERSION).Make(NetMsgType::REJECT, strCommand, REJECT_NONSTANDARD,
+-                               strprintf("Expected to offer services %08x", GetDesirableServiceFlags(nServices))));
+-            pfrom->fDisconnect = true;
+-            return false;
+-        }
+-
+-        if (nServices & ((1 << 7) | (1 << 5))) {
+-            if (GetTime() < 1533096000) {
+-                // Immediately disconnect peers that use service bits 6 or 8 until August 1st, 2018
+-                // These bits have been used as a flag to indicate that a node is running incompatible
+-                // consensus rules instead of changing the network magic, so we're stuck disconnecting
+-                // based on these service bits, at least for a while.
+-                pfrom->fDisconnect = true;
+-                return false;
+-            }
+-        }
+
+         if (nVersion < MIN_PEER_PROTO_VERSION)
+         {

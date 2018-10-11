@@ -1,4 +1,4 @@
-Name "Pricecoin Core (-bit)"
+Name "Pricecoin Core (64-bit)"
 
 RequestExecutionLevel highest
 SetCompressor /SOLID lzma
@@ -10,26 +10,26 @@ SetCompressor /SOLID lzma
 !define URL https://pricecoin.org/
 
 # MUI Symbol Definitions
-!define MUI_ICON "/home/poot/Desktop/PricecoinTest/share/pixmaps/bitcoin.ico"
-!define MUI_WELCOMEFINISHPAGE_BITMAP "/home/poot/Desktop/PricecoinTest/share/pixmaps/nsis-wizard.bmp"
+!define MUI_ICON "/home/zachchan105/PricecoinTest/share/pixmaps/bitcoin.ico"
+!define MUI_WELCOMEFINISHPAGE_BITMAP "/home/zachchan105/PricecoinTest/share/pixmaps/nsis-wizard.bmp"
 !define MUI_HEADERIMAGE
 !define MUI_HEADERIMAGE_RIGHT
-!define MUI_HEADERIMAGE_BITMAP "/home/poot/Desktop/PricecoinTest/share/pixmaps/nsis-header.bmp"
+!define MUI_HEADERIMAGE_BITMAP "/home/zachchan105/PricecoinTest/share/pixmaps/nsis-header.bmp"
 !define MUI_FINISHPAGE_NOAUTOCLOSE
 !define MUI_STARTMENUPAGE_REGISTRY_ROOT HKLM
 !define MUI_STARTMENUPAGE_REGISTRY_KEY ${REGKEY}
 !define MUI_STARTMENUPAGE_REGISTRY_VALUENAME StartMenuGroup
 !define MUI_STARTMENUPAGE_DEFAULTFOLDER "Pricecoin Core"
 !define MUI_FINISHPAGE_RUN "$WINDIR\explorer.exe"
-!define MUI_FINISHPAGE_RUN_PARAMETERS $INSTDIR\pricecoin-qt
+!define MUI_FINISHPAGE_RUN_PARAMETERS $INSTDIR\pricecoin-qt.exe
 !define MUI_UNICON "${NSISDIR}\Contrib\Graphics\Icons\modern-uninstall.ico"
-!define MUI_UNWELCOMEFINISHPAGE_BITMAP "/home/poot/Desktop/PricecoinTest/share/pixmaps/nsis-wizard.bmp"
+!define MUI_UNWELCOMEFINISHPAGE_BITMAP "/home/zachchan105/PricecoinTest/share/pixmaps/nsis-wizard.bmp"
 !define MUI_UNFINISHPAGE_NOAUTOCLOSE
 
 # Included files
 !include Sections.nsh
 !include MUI2.nsh
-!if "" == "64"
+!if "64" == "64"
 !include x64.nsh
 !endif
 
@@ -49,8 +49,8 @@ Var StartMenuGroup
 !insertmacro MUI_LANGUAGE English
 
 # Installer attributes
-OutFile /home/poot/Desktop/PricecoinTest/pricecoin-${VERSION}-win-setup.exe
-!if "" == "64"
+OutFile /home/zachchan105/PricecoinTest/pricecoin-${VERSION}-win64-setup.exe
+!if "64" == "64"
 InstallDir $PROGRAMFILES64\Pricecoin
 !else
 InstallDir $PROGRAMFILES\Pricecoin
@@ -74,14 +74,14 @@ ShowUninstDetails show
 Section -Main SEC0000
     SetOutPath $INSTDIR
     SetOverwrite on
-    File /home/poot/Desktop/PricecoinTest/release/pricecoin-qt
-    File /oname=COPYING.txt /home/poot/Desktop/PricecoinTest/COPYING
-    File /oname=readme.txt /home/poot/Desktop/PricecoinTest/doc/README_windows.txt
+    File /home/zachchan105/PricecoinTest/release/pricecoin-qt.exe
+    File /oname=COPYING.txt /home/zachchan105/PricecoinTest/COPYING
+    File /oname=readme.txt /home/zachchan105/PricecoinTest/doc/README_windows.txt
     SetOutPath $INSTDIR\daemon
-    File /home/poot/Desktop/PricecoinTest/release/pricecoind
-    File /home/poot/Desktop/PricecoinTest/release/pricecoin-cli
+    File /home/zachchan105/PricecoinTest/release/pricecoind.exe
+    File /home/zachchan105/PricecoinTest/release/pricecoin-cli.exe
     SetOutPath $INSTDIR\doc
-    File /r /home/poot/Desktop/PricecoinTest/doc\*.*
+    File /r /home/zachchan105/PricecoinTest/doc\*.*
     SetOutPath $INSTDIR
     WriteRegStr HKCU "${REGKEY}\Components" Main 1
 SectionEnd
@@ -92,8 +92,8 @@ Section -post SEC0001
     WriteUninstaller $INSTDIR\uninstall.exe
     !insertmacro MUI_STARTMENU_WRITE_BEGIN Application
     CreateDirectory $SMPROGRAMS\$StartMenuGroup
-    CreateShortcut "$SMPROGRAMS\$StartMenuGroup\$(^Name).lnk" $INSTDIR\pricecoin-qt
-    CreateShortcut "$SMPROGRAMS\$StartMenuGroup\Pricecoin Core (testnet, -bit).lnk" "$INSTDIR\pricecoin-qt" "-testnet" "$INSTDIR\pricecoin-qt" 1
+    CreateShortcut "$SMPROGRAMS\$StartMenuGroup\$(^Name).lnk" $INSTDIR\pricecoin-qt.exe
+    CreateShortcut "$SMPROGRAMS\$StartMenuGroup\Pricecoin Core (testnet, 64-bit).lnk" "$INSTDIR\pricecoin-qt.exe" "-testnet" "$INSTDIR\pricecoin-qt.exe" 1
     CreateShortcut "$SMPROGRAMS\$StartMenuGroup\Uninstall $(^Name).lnk" $INSTDIR\uninstall.exe
     !insertmacro MUI_STARTMENU_WRITE_END
     WriteRegStr HKCU "SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\$(^Name)" DisplayName "$(^Name)"
@@ -106,8 +106,8 @@ Section -post SEC0001
     WriteRegDWORD HKCU "SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\$(^Name)" NoRepair 1
     WriteRegStr HKCR "pricecoin" "URL Protocol" ""
     WriteRegStr HKCR "pricecoin" "" "URL:Pricecoin"
-    WriteRegStr HKCR "pricecoin\DefaultIcon" "" $INSTDIR\pricecoin-qt
-    WriteRegStr HKCR "pricecoin\shell\open\command" "" '"$INSTDIR\pricecoin-qt" "%1"'
+    WriteRegStr HKCR "pricecoin\DefaultIcon" "" $INSTDIR\pricecoin-qt.exe
+    WriteRegStr HKCR "pricecoin\shell\open\command" "" '"$INSTDIR\pricecoin-qt.exe" "%1"'
 SectionEnd
 
 # Macro for selecting uninstaller sections
@@ -125,7 +125,7 @@ done${UNSECTION_ID}:
 
 # Uninstaller sections
 Section /o -un.Main UNSEC0000
-    Delete /REBOOTOK $INSTDIR\pricecoin-qt
+    Delete /REBOOTOK $INSTDIR\pricecoin-qt.exe
     Delete /REBOOTOK $INSTDIR\COPYING.txt
     Delete /REBOOTOK $INSTDIR\readme.txt
     RMDir /r /REBOOTOK $INSTDIR\daemon
@@ -137,7 +137,7 @@ Section -un.post UNSEC0001
     DeleteRegKey HKCU "SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\$(^Name)"
     Delete /REBOOTOK "$SMPROGRAMS\$StartMenuGroup\Uninstall $(^Name).lnk"
     Delete /REBOOTOK "$SMPROGRAMS\$StartMenuGroup\$(^Name).lnk"
-    Delete /REBOOTOK "$SMPROGRAMS\$StartMenuGroup\Pricecoin Core (testnet, -bit).lnk"
+    Delete /REBOOTOK "$SMPROGRAMS\$StartMenuGroup\Pricecoin Core (testnet, 64-bit).lnk"
     Delete /REBOOTOK "$SMSTARTUP\Pricecoin.lnk"
     Delete /REBOOTOK $INSTDIR\uninstall.exe
     Delete /REBOOTOK $INSTDIR\debug.log
@@ -159,7 +159,7 @@ SectionEnd
 # Installer functions
 Function .onInit
     InitPluginsDir
-!if "" == "64"
+!if "64" == "64"
     ${If} ${RunningX64}
       ; disable registry redirection (enable access to 64-bit portion of registry)
       SetRegView 64

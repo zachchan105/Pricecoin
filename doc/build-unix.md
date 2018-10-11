@@ -19,7 +19,7 @@ To Build
 
 ```bash
 ./autogen.sh
-./configure
+./configure --disable-tests
 make
 make install # optional
 ```

@@ -1,9 +1,3 @@
-Pricecoin Core integration/staging tree
-=====================================
-
-[![Build Status](https://travis-ci.org/pricecoin-project/pricecoin.svg?branch=master)](https://travis-ci.org/pricecoin-project/pricecoin)
-
-https://pricecoin.org
 
 What is Pricecoin?
 ----------------

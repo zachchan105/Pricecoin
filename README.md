@@ -9,7 +9,7 @@ out collectively by the network. Pricecoin Core is the name of open source
 software which enables the use of this currency.
 
 For more information, as well as an immediately useable, binary version of
-the Pricecoin Core software, see [https://pricecoin.org](https://pricecoin.org).
+the Pricecoin Core software, see [https://pricecoincrypto.com](https://pricecoincrypto.com).
 
 License
 -------

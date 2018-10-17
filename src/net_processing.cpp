@@ -1570,7 +1570,7 @@ bool static ProcessMessage(CNode* pfrom, const std::string& strCommand, CDataStr
             connman->SetServices(pfrom->addr, nServices);
         }
 
-        if (nVersion < MIN_PEER_PROTO_VERSION)
+        if ((chainActive.Height() > 175000) && (nVersion < MIN_PEER_PROTO_VERSION))
         {
             // disconnect from peers older than this proto version
             LogPrint(BCLog::NET, "peer=%d using obsolete version %i; disconnecting\n", pfrom->GetId(), nVersion);

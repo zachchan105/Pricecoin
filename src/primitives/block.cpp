@@ -20,7 +20,16 @@ uint256 CBlockHeader::GetHash() const
 
 uint256 CBlockHeader::GetPoWHash(const int nHeight) const
 {
+    const Consensus::Params& params = Params().GetConsensus();
     uint256 thash;
+
+    if (nHeight > 0) {
+      if (params.fPowAllowMinDifficultyBlocks) {
+          allium_hash(BEGIN(nVersion), BEGIN(thash));
+          return thash;
+      }
+    }
+
     if (nHeight > 175000)
         allium_hash(BEGIN(nVersion), BEGIN(thash));
     else

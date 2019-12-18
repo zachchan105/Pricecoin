@@ -37,11 +37,6 @@ Website: https://www.pricecoincrypto.com/
 
 Instagram: https://www.instagram.com/pricecoincrypto/
 
-About Me
--------------------
-
-Zach Price:
-https://docs.google.com/document/d/1zboqKraqDfI4GqIEllLYDlW83g78A93ZTUB7q4W2Euc/edit?usp=sharing
 
 Pricecoin Contributors 
 -------------------
